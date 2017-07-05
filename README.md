@@ -132,7 +132,9 @@ PostgreSQL also needs to be enabled to start on reboot. Do that with this comman
 ### Install wkhtmltopdf
 
 wkhtmltopdf is required in odoo to print the reports. depending on your OS bit you can install wkhtmltopdf for odoo 10.
+
 How do I check if I have a 32-bit or a 64-bit OS?
+
 `uname -i`
 
 `wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.1/wkhtmltox-0.12.1_linux-wheezy-amd64.deb4`
@@ -146,3 +148,5 @@ How do I check if I have a 32-bit or a 64-bit OS?
 `ln -s /usr/bin/nodejs /usr/bin/node`
 
 `npm install -g less less-plugin-clean-css`
+
+# Odoo Server Configuration
