@@ -150,3 +150,27 @@ How do I check if I have a 32-bit or a 64-bit OS?
 `npm install -g less less-plugin-clean-css`
 
 # Odoo Server Configuration
+
+### Change ownership to odoo user
+
+`sudo chown -R odoo: *`
+
+### Setup configuration file
+
+Copy odoo.conf to /etc directory:
+
+`sudo cp /opt/odoo/odoo/debian/odoo.conf /etc/odoo-server.conf`
+
+`sudo chown odoo: /etc/odoo-server.conf`
+
+`sudo chmod 640 /etc/odoo-server.conf`
+
+### We create a log file:
+
+`sudo mkdir /var/log/odoo`
+
+`sudo chown odoo:root /var/log/odoo`
+
+`cd /var/log/odoo`
+
+`sudo touch odoo-server.log`
