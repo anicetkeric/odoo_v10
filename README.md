@@ -174,3 +174,5 @@ Copy odoo.conf to /etc directory:
 `cd /var/log/odoo`
 
 `sudo touch odoo-server.log`
+
+# init script
