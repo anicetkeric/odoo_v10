@@ -169,6 +169,21 @@ Copy odoo.conf to /etc directory:
 
 `sudo chmod 640 /etc/odoo-server.conf`
 
+ Modify the configuration file
+
+```xml
+[options]
+admin_passwd = admin
+db_host = False 
+db_port = False
+db_user = odoo
+db_password = FALSE
+addons_path = /opt/odoo/addons
+;Uncomment the following line to enable a custom log
+;logfile = /var/log/odoo/odoo-server.log
+xmlrpc_port = 8069
+```
+
 ### We create a log file:
 
 `sudo mkdir /var/log/odoo`
