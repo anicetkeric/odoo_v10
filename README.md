@@ -137,7 +137,11 @@ How do I check if I have a 32-bit or a 64-bit OS?
 
 `uname -i`
 
-`wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.1/wkhtmltox-0.12.1_linux-wheezy-amd64.deb4`
+Download the recommended version of wkhtmltopdf for Odoo server. In this example, we use 0.12.1. See the Odoo repository for an up-to-date list of compatible versions
+
+`sudo wget https://downloads.wkhtmltopdf.org/0.12/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb`
+
+Install the package using dpkg
 
 `sudo dpkg -i  wkhtmltox-0.12.1_linux-wheezy-amd64.deb`
 
