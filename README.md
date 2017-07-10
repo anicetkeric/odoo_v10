@@ -22,6 +22,8 @@ Install the most recent version of gdata:
 
 `sudo pip install gdata --upgrade`
 
+`sudo pip install passlib`
+
 ## Create a system user for Odoo application
 create a new Odoo system user to run its processes
 
