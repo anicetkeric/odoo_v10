@@ -182,7 +182,7 @@ db_user = odoo
 db_password = FALSE
 addons_path = /opt/odoo/addons
 ;Uncomment the following line to enable a custom log
-;logfile = /var/log/odoo/odoo-server.log
+logfile = /var/log/odoo/odoo-server.log
 xmlrpc_port = 8069
 ```
 
@@ -197,3 +197,24 @@ xmlrpc_port = 8069
 `sudo touch odoo-server.log`
 
 # init script
+
+Create a systemd unit called odoo-server to allow your application to behave as a service.
+
+`cd /lib/systemd/system/`
+
+`sudo wget https://raw.githubusercontent.com/anicetkeric/odoo_v10/master/odoo-server.sh`
+
+`sudo cp odoo-server.sh /lib/systemd/system/odoo-server.service`
+
+Change the odoo-server service permissions and ownership so only root can write to it, while the odoo user will only be able to read and execute it.
+
+`sudo chmod 755 /lib/systemd/system/odoo-server.service`
+
+`sudo chown root: /lib/systemd/system/odoo-server.service`
+
+
+
+
+
+
+
