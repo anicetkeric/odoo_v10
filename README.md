@@ -212,8 +212,13 @@ Change the odoo-server service permissions and ownership so only root can write 
 
 `sudo chown root: /lib/systemd/system/odoo-server.service`
 
+Enable Odoo instances to start on boot:
 
+`sudo systemctl enable odoo-server`
 
+start the Odoo server:
+
+`sudo systemctl start odoo-server`
 
 
 
