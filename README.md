@@ -220,6 +220,8 @@ start the Odoo server:
 
 `sudo systemctl start odoo-server`
 
+reboot your server and check for the odoo service using:
 
+`netstat -nlt | grep 8069`
 
 
